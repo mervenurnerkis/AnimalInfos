@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="Y6W-OH-hqX" customClass="MainViewController" customModule="AnimalInfos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1aY-GH-XH4">
+                                <rect key="frame" x="0.0" y="59" width="393" height="1007"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EV0-pz-Cef">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rh-a8-yWX" customClass="AView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="20" width="170" height="162"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cheetah" translatesAutoresizingMaskIntoConstraints="NO" id="g2L-2k-Tso">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="162"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheetah" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWo-er-tF8">
+                                                        <rect key="frame" x="20" y="20" width="130" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="HWo-er-tF8" secondAttribute="trailing" constant="20" id="1dD-DO-LDt"/>
+                                                    <constraint firstItem="HWo-er-tF8" firstAttribute="leading" secondItem="8rh-a8-yWX" secondAttribute="leading" constant="20" id="JX7-Gg-K51"/>
+                                                    <constraint firstItem="HWo-er-tF8" firstAttribute="top" secondItem="8rh-a8-yWX" secondAttribute="top" constant="20" id="Qis-dp-xG7"/>
+                                                    <constraint firstAttribute="width" constant="170" id="luT-wo-thk"/>
+                                                    <constraint firstAttribute="height" constant="162" id="r2r-XO-7Ew"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vl3-C6-xka" customClass="AView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="222" width="170" height="162"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gorilla" translatesAutoresizingMaskIntoConstraints="NO" id="XZ5-FP-s8U">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="162"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gorilla" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8EV-ma-sgL">
+                                                        <rect key="frame" x="20" y="20" width="130" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <accessibility key="accessibilityConfiguration" label="giraffeView"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="170" id="3xc-aW-E5G"/>
+                                                    <constraint firstAttribute="trailing" secondItem="8EV-ma-sgL" secondAttribute="trailing" constant="20" id="LAb-z8-k7T"/>
+                                                    <constraint firstItem="8EV-ma-sgL" firstAttribute="leading" secondItem="Vl3-C6-xka" secondAttribute="leading" constant="20" id="cYT-wh-FKA"/>
+                                                    <constraint firstItem="8EV-ma-sgL" firstAttribute="top" secondItem="Vl3-C6-xka" secondAttribute="top" constant="20" id="d0V-0I-6Dr"/>
+                                                    <constraint firstAttribute="height" constant="162" id="kJQ-mE-hzR"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sdj-mH-qNU" customClass="AView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="203" y="222" width="170" height="162"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hippo" translatesAutoresizingMaskIntoConstraints="NO" id="CsT-Bs-60o">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="162"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hippo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBW-kd-mRW">
+                                                        <rect key="frame" x="20" y="20" width="130" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="gBW-kd-mRW" firstAttribute="leading" secondItem="sdj-mH-qNU" secondAttribute="leading" constant="20" id="M2h-6w-jQj"/>
+                                                    <constraint firstAttribute="width" constant="170" id="WlT-bN-pAM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gBW-kd-mRW" secondAttribute="trailing" constant="20" id="ZIv-co-d1W"/>
+                                                    <constraint firstAttribute="height" constant="162" id="pTn-7z-JTj"/>
+                                                    <constraint firstItem="gBW-kd-mRW" firstAttribute="top" secondItem="sdj-mH-qNU" secondAttribute="top" constant="20" id="xle-gJ-kZa"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E7d-Xt-UBf" customClass="AView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="424" width="170" height="162"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lion" translatesAutoresizingMaskIntoConstraints="NO" id="HJf-rL-ZV2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="162"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmp-Sa-V5J">
+                                                        <rect key="frame" x="20" y="20" width="130" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Jmp-Sa-V5J" firstAttribute="leading" secondItem="E7d-Xt-UBf" secondAttribute="leading" constant="20" id="KrY-w2-SeQ"/>
+                                                    <constraint firstAttribute="width" constant="170" id="YBl-jU-C6r"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Jmp-Sa-V5J" secondAttribute="trailing" constant="20" id="YjL-s9-RET"/>
+                                                    <constraint firstItem="Jmp-Sa-V5J" firstAttribute="top" secondItem="E7d-Xt-UBf" secondAttribute="top" constant="20" id="ead-ge-R5c"/>
+                                                    <constraint firstAttribute="height" constant="162" id="frQ-w3-S6q"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15T-l6-glY" customClass="AView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="203" y="424" width="170" height="162"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zebra" translatesAutoresizingMaskIntoConstraints="NO" id="QtL-qB-sxP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="162"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zebra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdu-Cx-Jm6">
+                                                        <rect key="frame" x="20" y="20" width="130" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="tdu-Cx-Jm6" firstAttribute="leading" secondItem="15T-l6-glY" secondAttribute="leading" constant="20" id="1Y9-Wh-M8q"/>
+                                                    <constraint firstAttribute="trailing" secondItem="tdu-Cx-Jm6" secondAttribute="trailing" constant="20" id="bbr-ei-63P"/>
+                                                    <constraint firstAttribute="height" constant="162" id="cLJ-Dr-Uh6"/>
+                                                    <constraint firstAttribute="width" constant="170" id="uV6-S5-jgV"/>
+                                                    <constraint firstItem="tdu-Cx-Jm6" firstAttribute="top" secondItem="15T-l6-glY" secondAttribute="top" constant="20" id="wTL-6m-9h0"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRP-P1-iz8" customClass="AView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="626" width="170" height="162"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ostrich" translatesAutoresizingMaskIntoConstraints="NO" id="Wys-G5-Oc2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="162"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ostrich" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnW-cx-5zb">
+                                                        <rect key="frame" x="20" y="20" width="130" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="bnW-cx-5zb" firstAttribute="leading" secondItem="kRP-P1-iz8" secondAttribute="leading" constant="20" id="9P4-dq-QFI"/>
+                                                    <constraint firstAttribute="width" constant="170" id="OpH-1e-oeu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bnW-cx-5zb" secondAttribute="trailing" constant="20" id="etu-FQ-MXU"/>
+                                                    <constraint firstItem="bnW-cx-5zb" firstAttribute="top" secondItem="kRP-P1-iz8" secondAttribute="top" constant="20" id="vcn-az-v6m"/>
+                                                    <constraint firstAttribute="height" constant="162" id="w82-4A-sJj"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmu-zC-SHY" customClass="AView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="203" y="626" width="170" height="162"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elephant" translatesAutoresizingMaskIntoConstraints="NO" id="HtO-ho-sMB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="162"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elephant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oa2-dT-U6F">
+                                                        <rect key="frame" x="20" y="20" width="130" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="oa2-dT-U6F" firstAttribute="top" secondItem="zmu-zC-SHY" secondAttribute="top" constant="20" id="Igp-uh-T6P"/>
+                                                    <constraint firstAttribute="width" constant="170" id="Yrc-ae-yEY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="oa2-dT-U6F" secondAttribute="trailing" constant="20" id="cUW-oj-882"/>
+                                                    <constraint firstAttribute="height" constant="162" id="ngu-IS-XPW"/>
+                                                    <constraint firstItem="oa2-dT-U6F" firstAttribute="leading" secondItem="zmu-zC-SHY" secondAttribute="leading" constant="20" id="rnG-Ay-CQk"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dR-JR-30k" customClass="AView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="203" y="20" width="170" height="162"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="giraffe" translatesAutoresizingMaskIntoConstraints="NO" id="Nvy-fk-JRS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="162"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giraffe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHf-in-vha">
+                                                        <rect key="frame" x="20" y="20" width="130" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="170" id="2H3-jb-b4V"/>
+                                                    <constraint firstItem="MHf-in-vha" firstAttribute="leading" secondItem="9dR-JR-30k" secondAttribute="leading" constant="20" id="9LS-Qn-eOZ"/>
+                                                    <constraint firstAttribute="height" constant="162" id="Eeu-I4-vf0"/>
+                                                    <constraint firstItem="MHf-in-vha" firstAttribute="top" secondItem="9dR-JR-30k" secondAttribute="top" constant="20" id="eyc-xw-jIe"/>
+                                                    <constraint firstAttribute="trailing" secondItem="MHf-in-vha" secondAttribute="trailing" constant="20" id="kaF-4G-hOj"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="kRP-P1-iz8" firstAttribute="top" secondItem="E7d-Xt-UBf" secondAttribute="bottom" constant="40" id="0EL-JR-fWg"/>
+                                            <constraint firstItem="zmu-zC-SHY" firstAttribute="top" secondItem="15T-l6-glY" secondAttribute="bottom" constant="40" id="6LL-ll-yGH"/>
+                                            <constraint firstAttribute="trailing" secondItem="sdj-mH-qNU" secondAttribute="trailing" constant="20" id="MKG-ZU-sIX"/>
+                                            <constraint firstAttribute="height" constant="1000" id="RPE-se-b7c"/>
+                                            <constraint firstItem="Vl3-C6-xka" firstAttribute="top" secondItem="8rh-a8-yWX" secondAttribute="bottom" constant="40" id="SHZ-rq-bga"/>
+                                            <constraint firstItem="8rh-a8-yWX" firstAttribute="leading" secondItem="EV0-pz-Cef" secondAttribute="leading" constant="20" id="Tbt-2c-fO7"/>
+                                            <constraint firstItem="9dR-JR-30k" firstAttribute="top" secondItem="EV0-pz-Cef" secondAttribute="top" constant="20" id="UDT-ZW-TQ2"/>
+                                            <constraint firstItem="E7d-Xt-UBf" firstAttribute="leading" secondItem="EV0-pz-Cef" secondAttribute="leading" constant="20" id="VYi-0o-5ok"/>
+                                            <constraint firstAttribute="trailing" secondItem="15T-l6-glY" secondAttribute="trailing" constant="20" id="WP1-5i-yaQ"/>
+                                            <constraint firstItem="kRP-P1-iz8" firstAttribute="leading" secondItem="EV0-pz-Cef" secondAttribute="leading" constant="20" id="WuZ-LR-bsB"/>
+                                            <constraint firstItem="8rh-a8-yWX" firstAttribute="top" secondItem="EV0-pz-Cef" secondAttribute="top" constant="20" id="Yof-ya-LBU"/>
+                                            <constraint firstItem="E7d-Xt-UBf" firstAttribute="top" secondItem="Vl3-C6-xka" secondAttribute="bottom" constant="40" id="cMv-fP-xNU"/>
+                                            <constraint firstItem="Vl3-C6-xka" firstAttribute="leading" secondItem="EV0-pz-Cef" secondAttribute="leading" constant="20" id="chg-ab-1w5"/>
+                                            <constraint firstAttribute="trailing" secondItem="9dR-JR-30k" secondAttribute="trailing" constant="20" id="dWM-4C-hHj"/>
+                                            <constraint firstAttribute="trailing" secondItem="zmu-zC-SHY" secondAttribute="trailing" constant="20" id="qvy-iW-cDi"/>
+                                            <constraint firstItem="sdj-mH-qNU" firstAttribute="top" secondItem="9dR-JR-30k" secondAttribute="bottom" constant="40" id="tQg-b8-Epy"/>
+                                            <constraint firstItem="15T-l6-glY" firstAttribute="top" secondItem="sdj-mH-qNU" secondAttribute="bottom" constant="40" id="wBl-Ve-Bgg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="EV0-pz-Cef" firstAttribute="top" secondItem="1aY-GH-XH4" secondAttribute="top" id="Fdc-I7-24c"/>
+                                    <constraint firstItem="EV0-pz-Cef" firstAttribute="leading" secondItem="1aY-GH-XH4" secondAttribute="leading" id="dGM-3J-q5s"/>
+                                    <constraint firstAttribute="trailing" secondItem="EV0-pz-Cef" secondAttribute="trailing" id="dcP-4Q-FRv"/>
+                                    <constraint firstAttribute="bottom" secondItem="EV0-pz-Cef" secondAttribute="bottom" id="oJy-xm-nCu"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1aY-GH-XH4" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="HFs-cP-5XP"/>
+                            <constraint firstItem="1aY-GH-XH4" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="VZ2-Kn-b94"/>
+                            <constraint firstItem="1aY-GH-XH4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="gh1-70-HiH"/>
+                            <constraint firstItem="EV0-pz-Cef" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="uRH-dt-eoc"/>
+                            <constraint firstItem="1aY-GH-XH4" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="yRP-w9-29B"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="1100"/>
+                    <connections>
+                        <outlet property="cheetahView" destination="8rh-a8-yWX" id="Jf3-EA-poJ"/>
+                        <outlet property="elephantView" destination="zmu-zC-SHY" id="F7y-nx-smS"/>
+                        <outlet property="giraffeView" destination="9dR-JR-30k" id="gol-RQ-EHK"/>
+                        <outlet property="gorillaView" destination="Vl3-C6-xka" id="peW-CX-4zn"/>
+                        <outlet property="hippoView" destination="sdj-mH-qNU" id="E2k-tF-lhe"/>
+                        <outlet property="lionView" destination="E7d-Xt-UBf" id="b0V-im-UZJ"/>
+                        <outlet property="ostrichView" destination="kRP-P1-iz8" id="bie-CI-ukY"/>
+                        <outlet property="zebraView" destination="15T-l6-glY" id="mju-4I-iIX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2.2900763358778624" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cheetah" width="400" height="300"/>
+        <image name="elephant" width="440" height="292"/>
+        <image name="giraffe" width="440" height="295"/>
+        <image name="gorilla" width="439" height="294"/>
+        <image name="hippo" width="440" height="293"/>
+        <image name="lion" width="440" height="310"/>
+        <image name="ostrich" width="440" height="262"/>
+        <image name="zebra" width="440" height="293"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
